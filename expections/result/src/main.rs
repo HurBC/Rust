@@ -11,8 +11,8 @@ fn read_file_contents(path: PathBuf) -> Result<String, Error> {
     // - Pass variable to `file` variable on success, or
     // - Return from function early if there's an error
     let mut file: File = match File::open(path) {
-        Ok(file_handle) => todo!("Pass variable to `file` variable on success"),
-        Err(io_error) => todo!("Return from function early if there's an error")
+        Ok(file_handle) => file_handle,
+        Err(io_error) => return Err(io_error)
     };
 
     // Read file contents into `String` variable with `read_to_string`
@@ -21,11 +21,11 @@ fn read_file_contents(path: PathBuf) -> Result<String, Error> {
     // TODO #2: Return from function early if there's an error
     match file.read_to_string(&mut string) {
         Ok(_) => (),
-        Err(io_error) => todo!("Return from function early if there's an error")
+        Err(io_error) => return Err(io_error)
     };
 
     // TODO #3: Return `string` variable as expected by function signature
-    todo!("Return `string` variable")
+    Ok(string)
 }
 
 fn main() {
