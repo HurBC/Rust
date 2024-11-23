@@ -53,14 +53,14 @@ fn change_value(message: &String) {
     // Los tipos referencia no pueden ser modificados
     // A no ser que se especifique que el parametro es
     // &mut String (La variable que se entregara tambien debe setr mutable)
-    // message.push("!");
+    // message.push_str("!");
 }
 
 fn change_value2(message: &mut String) {
     // Los tipos referencia no pueden ser modificados
     // A no ser que se especifique que el parametro es
     // &mut String (La variable que se entregara tambien debe setr mutable)
-    // message.push("!");
+    message.push_str("!");
 }
 
 fn loans() {
@@ -76,7 +76,9 @@ fn loans() {
     print_greeting(&another_greeting);
     print_greeting(&another_greeting);
 
+    // Esta variable sera mutable desde la funcion
     let mut mutable_greeting = String::from("HIIII");
 
+    change_value2(&mut mutable_greeting);
     change_value2(&mut mutable_greeting);
 }
