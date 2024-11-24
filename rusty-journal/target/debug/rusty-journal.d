@@ -1,0 +1,1 @@
+/home/hurb/VSCode/Rust/rusty-journal/target/debug/rusty-journal: /home/hurb/VSCode/Rust/rusty-journal/src/cli.rs /home/hurb/VSCode/Rust/rusty-journal/src/main.rs /home/hurb/VSCode/Rust/rusty-journal/src/tasks.rs

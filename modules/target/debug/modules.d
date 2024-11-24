@@ -1,0 +1,1 @@
+/home/hurb/VSCode/Rust/modules/target/debug/modules: /home/hurb/VSCode/Rust/modules/src/authentication.rs /home/hurb/VSCode/Rust/modules/src/main.rs /home/hurb/VSCode/Rust/modules/src/text_processing.rs
